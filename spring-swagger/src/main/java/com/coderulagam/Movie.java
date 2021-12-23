@@ -5,6 +5,14 @@ public class Movie {
 	 private String name;
 	 
 	 private String actor;
+	
+	public Movie() { 
+	}
+	 
+	 public Movie(String name, String actor) {
+		this.name = name;
+		this.actor = actor;
+	}
 
 	public String getName() {
 		return name;
