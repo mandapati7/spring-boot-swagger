@@ -15,6 +15,11 @@ public class MoviesController {
 	
 	private static List<Movie> movies = new ArrayList<Movie>();
 	
+	static {
+		movies.add(new Movie("Movie1", "Actor 1"));
+		movies.add(new Movie("Movie2", "Actor 2"));
+	}
+	
 	@GetMapping
 	public List<Movie> getMovies(){
 		return movies;
